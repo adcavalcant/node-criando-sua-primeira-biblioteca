@@ -24,15 +24,4 @@ async function pegaArquivo(caminhoDoArquivo) {
     trataErro(error);
   }
 }
-
-pegaArquivo("./arquivos/texto.md");
-//pegaArquivo("./arquivos/texto.m"); //->erro proposital para teste
-
-//usar regex101.com para testar
-// pega o que está dentro dos colchetes -> \[[^[\]]*?\]
-
-// pega o que está dentro dos parênteses -> \(https?:\/\/[^\s?#.].[^\s]*\)
-
-// pega tudo que precisamos -> \[[^[\]]*?\]\(https?:\/\/[^\s?#.].[^\s]*\)
-
-// pega tudo que precisamos separadamente -> /\[([^[\]]*?)\]\((https?:\/\/[^\s?#.].[^\s]*)\)
+export default pegaArquivo;
